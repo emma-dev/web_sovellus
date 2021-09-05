@@ -4,8 +4,14 @@ import classes from './ProfileInfo.module.css';
 import ProfileStatus from './ProfileStatus';
 import ProfileStatusWithHooks from './ProfileStatusWithHooks';
 import userPhoto from '../../../assets/images/Killjoy.png';
+import { useState } from 'react';
+import ProfileDataForm from './ProfileDataForm';
+
 
 const ProfileInfo = ({ profile, status, updateStatus, isOwner, savePhoto }) => {
+
+
+let[editMode, setEditMode] = useState(false);
 
     if (!profile) {
         return <Preloader />
@@ -24,7 +30,21 @@ const ProfileInfo = ({ profile, status, updateStatus, isOwner, savePhoto }) => {
                 {/* profile.photos.large ||   */}
                 <img src={userPhoto} />
                 {isOwner && <input type={'file'} onChange={onMainPhotoSelected} />}
-                <div>
+                {editMode 
+                ? <ProfileDataForm profile={profile}/> 
+                : <ProfileData goToEditMode={() => {setEditMode(true)}} profile={profile} isOwner={isOwner}/>}
+                    <ProfileData profile={profile} />
+
+                <div className={classes.text}><ProfileStatusWithHooks status={status} updateStatus={updateStatus} /></div>
+            </div>
+        </div>
+
+    );
+}
+
+const ProfileData =({profile, isOwner, goToEditMode}) => {
+return <div>
+   {isOwner &&  <div><button onClick={goToEditMode}>edit</button></div>}
                     <div>
                         Full name: {profile.fullName}
                     </div>
@@ -48,13 +68,10 @@ const ProfileInfo = ({ profile, status, updateStatus, isOwner, savePhoto }) => {
                     </div>
 
                 </div>
-                <div className={classes.text}><ProfileStatusWithHooks status={status} updateStatus={updateStatus} /></div>
-            </div>
-        </div>
-
-    );
 }
 
+
+    
 
 const Contact = (contactTitle, contactValue) =>{
 return <div><b>{contactTitle}</b>: {contactValue}</div>

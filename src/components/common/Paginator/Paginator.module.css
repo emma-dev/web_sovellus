@@ -1,13 +1,17 @@
 
 
     .paginator {
-       
+       text-align: center;
         margin: auto;
+        
         padding: 20px;
-        margin-top: -70px;
-    width: 342px;
+        margin-top: -62px;
+        height: 15px;
+        width: 262px;
+        background-image: url("../../../assets/images/pagination.png");
     }
     .pageNumber {
+      
         padding: 2px;
         color: aliceblue;
         
@@ -16,4 +20,24 @@
    .selectedPage {
         font-weight: bold;
         border-color: rgb(231, 5, 5);
+    }
+
+
+    .paginator .back{
+        border: none;
+        text-align: start;
+        width: 150px;
+        font-size: medium;
+       font-weight: bold;
+        background-color: rgba(0, 0, 255, 0);
+       color:white;
+    }
+    .paginator .next{
+        border: none;
+        text-align: end;
+    
+        font-size: medium;
+       font-weight: bold;
+        background-color: rgba(0, 0, 255, 0);
+       color:white;
     }
