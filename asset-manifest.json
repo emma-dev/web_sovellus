@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/web_sovellus/static/css/main.28a9a1c4.chunk.css",
+    "main.js": "/web_sovellus/static/js/main.fae0d84f.chunk.js",
+    "main.js.map": "/web_sovellus/static/js/main.fae0d84f.chunk.js.map",
+    "runtime-main.js": "/web_sovellus/static/js/runtime-main.1f3ed6eb.js",
+    "runtime-main.js.map": "/web_sovellus/static/js/runtime-main.1f3ed6eb.js.map",
+    "static/js/2.fd37ddd0.chunk.js": "/web_sovellus/static/js/2.fd37ddd0.chunk.js",
+    "static/js/2.fd37ddd0.chunk.js.map": "/web_sovellus/static/js/2.fd37ddd0.chunk.js.map",
+    "static/css/3.f06c7886.chunk.css": "/web_sovellus/static/css/3.f06c7886.chunk.css",
+    "static/js/3.9d603d48.chunk.js": "/web_sovellus/static/js/3.9d603d48.chunk.js",
+    "static/js/3.9d603d48.chunk.js.map": "/web_sovellus/static/js/3.9d603d48.chunk.js.map",
+    "static/css/4.d276d4df.chunk.css": "/web_sovellus/static/css/4.d276d4df.chunk.css",
+    "static/js/4.e3c3db56.chunk.js": "/web_sovellus/static/js/4.e3c3db56.chunk.js",
+    "static/js/4.e3c3db56.chunk.js.map": "/web_sovellus/static/js/4.e3c3db56.chunk.js.map",
+    "static/js/5.af6ec409.chunk.js": "/web_sovellus/static/js/5.af6ec409.chunk.js",
+    "static/js/5.af6ec409.chunk.js.map": "/web_sovellus/static/js/5.af6ec409.chunk.js.map",
+    "index.html": "/web_sovellus/index.html",
+    "static/css/3.f06c7886.chunk.css.map": "/web_sovellus/static/css/3.f06c7886.chunk.css.map",
+    "static/css/4.d276d4df.chunk.css.map": "/web_sovellus/static/css/4.d276d4df.chunk.css.map",
+    "static/css/main.28a9a1c4.chunk.css.map": "/web_sovellus/static/css/main.28a9a1c4.chunk.css.map",
+    "static/js/2.fd37ddd0.chunk.js.LICENSE.txt": "/web_sovellus/static/js/2.fd37ddd0.chunk.js.LICENSE.txt",
+    "static/media/Login.module.css": "/web_sovellus/static/media/Group_5.fda61f85.png",
+    "static/media/Killjoy.png": "/web_sovellus/static/media/Killjoy.f1d20e3b.png",
+    "static/media/Reyna.e21cdeb0.png": "/web_sovellus/static/media/Reyna.e21cdeb0.png",
+    "static/media/Sage.149e3df1.png": "/web_sovellus/static/media/Sage.149e3df1.png",
+    "static/media/Viper.affd2824.png": "/web_sovellus/static/media/Viper.affd2824.png",
+    "static/media/users.module.css": "/web_sovellus/static/media/users.71e08fd0.png",
+    "static/media/loader_backinout.3e17615e.gif": "/web_sovellus/static/media/loader_backinout.3e17615e.gif",
+    "static/media/logo.549f01d3.png": "/web_sovellus/static/media/logo.549f01d3.png",
+    "static/media/ProfileInfo.module.css": "/web_sovellus/static/media/profile_user.0a709d4d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f3ed6eb.js",
+    "static/js/2.fd37ddd0.chunk.js",
+    "static/css/main.28a9a1c4.chunk.css",
+    "static/js/main.fae0d84f.chunk.js"
+  ]
+}
