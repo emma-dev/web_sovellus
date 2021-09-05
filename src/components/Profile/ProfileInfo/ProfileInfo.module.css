@@ -1,0 +1,33 @@
+
+.content{
+  grid-area:c;
+  background-color: #b79cf000;
+}
+
+.content img
+{
+  width:100%;
+  
+}
+
+.descriptionBlock{
+ 
+  padding:50px;
+  width: 412px;
+  height: 500.04px;
+  background-image: url("../../../assets/images/profile_user.png");
+  
+}
+
+.text{
+  width:80px;
+    margin: auto;
+}
+
+.block{
+  margin: auto;
+  width: 500px;
+}
+
+
+  

@@ -1,0 +1,19 @@
+
+
+    .paginator {
+       
+        margin: auto;
+        padding: 20px;
+        margin-top: -70px;
+    width: 342px;
+    }
+    .pageNumber {
+        padding: 2px;
+        color: aliceblue;
+        
+    }
+    
+   .selectedPage {
+        font-weight: bold;
+        border-color: rgb(231, 5, 5);
+    }

@@ -1,0 +1,52 @@
+.nav{
+    grid-area:n;
+    /* background-color: #12122D; */
+    background-color: #17181F;
+    padding: 20px;
+    margin-top: -60px;
+    border-right:3px solid rgb(255, 255, 255);
+    }
+
+.item a{
+        color:honeydew;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Poppins;
+        font-size:20px;
+    }
+
+.item a.active{
+    color: rgba(240, 255, 240, 0.753);
+}
+
+.itemButton {
+    color:rgba(247, 244, 244, 0.438);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Poppins;
+    font-size:15px;
+}
+
+.itemButton .login{
+    color:honeydew;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Poppins;
+    font-size:20px;
+}
+
+
+.itemButton button{
+    border-radius: 40px;
+    background: #ffffff54;
+   color: #ffffff;
+   font-weight: bold;
+   font-family: Nunito Sans;
+   border: 7px solid rgba(255, 255, 255, 0);
+   
+}
+.header img{
+    width:90px;
+    margin-left: -20px;
+    
+    }

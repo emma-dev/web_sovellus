@@ -1,0 +1,79 @@
+
+ .formBack{
+    padding: 100px;
+    margin-top: -160px;
+    
+    background-image: url("../../assets/images/Group_5.png");
+   
+} 
+.formBack .form h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-family: Nunito Sans;
+    width: 200px;
+    margin: auto;
+}
+.formBack .form .img {
+    padding-top: 100px;
+    width: 160px;
+    margin: auto;
+}
+
+.formBack .form .img  img{
+    
+    width: 160px;
+    
+}
+
+.formCard{
+    padding: 20px;
+    width: 200px;
+    margin: auto;
+
+    
+    }
+    .formCard button{
+        text-align: center;
+        width: 200px;
+        height: 40px;
+        left: 139px;
+        top: 714px;
+       
+        color: white;
+        font-weight: 700;
+        font-size: 15px;
+        font-family: Nunito Sans;
+        background: radial-gradient(63.11% 63.11% at 31.97% 19.67%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%), #38C558;
+box-shadow: 4px 38px 62px rgba(0, 0, 0, 0.5);
+border-radius: 25px;
+        }
+
+        .formCard .email{
+            text-align: left;
+        width: 200px;
+        height: 25px;
+        left: 139px;
+        top: 714px;
+        background: #ffffff;
+        border-radius: 10px;
+        border: 7px solid #ffffff00;
+        
+        font-weight: 700;
+        font-size: 15px;
+        font-family: Nunito Sans;
+        margin-bottom: 8px;
+            
+            }
+
+            .formCard h3{
+                font-size: 15px;
+        font-family: Nunito Sans;
+                margin-top: -20px;
+                margin-left: -50px;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                }
+        
+
+
