@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, withRouter } from 'react-router-dom';
+import { HashRouter, Route, withRouter } from 'react-router-dom';
 import React, { Suspense } from 'react';
 import UsersContainer from './components/Users/UsersContainer';
 import HeaderContainer from './components/Navbar/NavContainer';
