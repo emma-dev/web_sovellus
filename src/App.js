@@ -39,6 +39,9 @@ class App extends Component {
         <HeaderContainer />
 
         <div className='app-wrapper-content'>
+          <Switch>
+
+          <Route exact path='/' render={() => <Redirect to={"/profile"} />} />
 
           <Route path='/dialogs' render={withSuspense(DialogsContainer) } />
 
@@ -48,6 +51,8 @@ class App extends Component {
 
           <Route path='/login' render={() => <LoginPage />} />
 
+          <Route path='*' render={() => <div>404 NOT FOUND</div>} />
+          </Switch>
         </div>
 
       </div>
