@@ -8,7 +8,7 @@ import { useState } from 'react';
 import ProfileDataForm from './ProfileDataForm';
 
 
-const ProfileInfo = ({ profile, status, updateStatus, isOwner, savePhoto }) => {
+const ProfileInfo = ({ profile, status, updateStatus, isOwner, savePhoto, saveProfile  }) => {
 
 
 let[editMode, setEditMode] = useState(false);
@@ -23,6 +23,13 @@ let[editMode, setEditMode] = useState(false);
         }
     }
 
+const onSubmit =(formData) => {
+ saveProfile(formData).then(() => {
+    setEditMode(false);
+ });
+  }
+
+
     return (
         <div className={classes.block}>
 
@@ -31,7 +38,7 @@ let[editMode, setEditMode] = useState(false);
                 <img src={userPhoto} />
                 {isOwner && <input type={'file'} onChange={onMainPhotoSelected} />}
                 {editMode 
-                ? <ProfileDataForm profile={profile}/> 
+                ? <ProfileDataForm initialValues={profile} profile={profile} onSubmit={onSubmit}/> 
                 : <ProfileData goToEditMode={() => {setEditMode(true)}} profile={profile} isOwner={isOwner}/>}
                     <ProfileData profile={profile} />
 
@@ -62,9 +69,9 @@ return <div>
                     </div>
 
                     <div>
-                            {Object.keys(profile.contacts).map(key => {
-                               return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]} />
-                            })}
+                    {/* {Object.keys(profile.contacts).map(key => {
+                               return <Contact  key={key} contactTitle={key} contactValue={profile.contacts[key]} />
+                            })}  */}
                     </div>
 
                 </div>
