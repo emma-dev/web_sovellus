@@ -1,3 +1,16 @@
+.contact{
+  color: #696969;
+  font-family: Roboto;
+  font-weight: 500;
+
+font-size: 16px;
+line-height: 16px;
+display: grid;
+grid-template-columns: 2fr 10fr;
+margin: 5px;
+
+}
+
 
 .content{
   grid-area:c;
@@ -30,4 +43,60 @@
 }
 
 
-  
+.infoForm{
+  padding: 90px;
+  padding-top: 0px;
+  text-align: center;
+}
+.info{
+  padding: 90px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.data{
+  font-family: Roboto;
+  font-weight: 500;
+
+font-size: 16px;
+line-height: 16px;
+
+color: #696969;
+}
+.edit{
+  padding-left:5px;
+}
+.edit button{
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  width: 58px;
+height: 27px;
+
+background: rgba(104, 104, 104, 0.63);
+border-radius: 7px;
+}
+
+.chooseFoto input{
+  text-align: center;
+ margin-left: 165px;
+  padding-top:0px;
+ color: rgba(240, 248, 255, 0);
+ height:  30px;
+}
+
+.string{
+  height:  60px;
+}
+
+  .status{
+    font-family: Roboto;
+font-style: italic;
+font-weight: 900;
+font-size: 20px;
+line-height: 16px;
+width: 200px;
+height: 40px;
+margin-left: -40px;
+color: #FFFFFF;
+  }

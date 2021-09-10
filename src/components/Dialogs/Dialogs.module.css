@@ -1,3 +1,26 @@
+
+.blok{
+    background-image: url("../../assets/images/back_img.png");
+    padding: 20px;
+    margin-top: -70px;  
+}
+.blok h2{
+    
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 56px;
+color: #EA94B6;
+}
+.blok h2 span{
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 48px;
+line-height: 56px;
+color: #FFFFFF;
+} 
 .dialogs{
 display: grid;
 grid-template-columns: 2fr 10fr;
@@ -6,39 +29,103 @@ grid-template-columns: 2fr 10fr;
 
 .dialogsItems {
 padding:20px;
+}
+
+.block{
+width: 284px;
+height: 67px;
+background: rgba(237, 155, 186, 0.459);
+border-radius: 16px;
+margin: 20px;
+
+}
+.dialogsItems img{
+width: 65px;
+}
+
+.chatBlok{
+    padding:42px;
+}
+.search{
+
+width: 233px;
+color: white;
+
+height: 35px;
+background: rgba(0, 0, 0, 0.24);
+border-radius: 8px;
+}
+.search img{
+width: 24px;
+height: 24px;
+padding: 5px;
 
 }
 
-.dialogsItems img{
-    width: 70px;
- 
-   color: black;
+.dialogItems{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 56px;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    }
+
+    .did{
+        margin-left: 60px;
+        margin-top: -70px;
+    }
+    .did h4{
+        color: rgba(0, 0, 0, 0.774);
+        font-weight: 400;
+    font-size: 12px;
+    margin-left: 180px;
+        margin-top: -50px;
     }
 
 
-.dialogsItems .active{
-    color:rgb(0, 0, 0);
-    
-}
 
 .messages{
-padding:20px;
-
-}
-.messages img{
-    width: 70px;
-    
-}
-
-.messages .message{
-color:black;
-}
-
-.textarea{
-    padding:10px 10px;
-}
-
-.button{
-    padding:10px ;
-}
+    padding:40px;
+    margin-top: -180px;
   
+    }
+    .newBlock{
+       
+  width: 284px;
+  height: 60px;
+background: rgba(255, 255, 255, 0.22);
+border-radius: 79px; 
+margin: 120px;
+    }
+    .messages img{
+    width: 50px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .messagesColor{
+        margin-left: 60px;
+        margin-top: -35px;
+        color: white;
+    }
+
+ .posts{
+   margin-left:280px;
+   
+   
+}
+.send button  img{
+
+    width: 53px;
+}
+.send button{
+border: none;
+background-color: rgba(240, 248, 255, 0);
+margin-left:450px;
+margin-top: -150px;
+}
+
+
+ 

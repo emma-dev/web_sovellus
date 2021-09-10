@@ -11,10 +11,9 @@ let initialState = {
     ],
     messages: [
 
-        { id: 1, message: 'Hi' },
-        { id: 2, message: 'Could you recommend a good doctor?' },
-        { id: 3, message: 'How are you?' },
-        { id: 4, message: 'Hello!' }
+        { id: 2, message: 'Hi, Jenifer!' },
+        { id: 2, message: 'How are you?' },
+        { id: 2, message: 'Would you like to meet today?' }
 
     ]
 }

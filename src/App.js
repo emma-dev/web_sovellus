@@ -1,5 +1,6 @@
 import './App.css';
 import { HashRouter, Route, withRouter } from 'react-router-dom';
+import {Redirect, Switch} from 'react-router';
 import React, { Suspense } from 'react';
 import UsersContainer from './components/Users/UsersContainer';
 import HeaderContainer from './components/Navbar/NavContainer';
@@ -19,11 +20,17 @@ const DialogsContainer =React.lazy(() => import ('./components/Dialogs/DialogsCo
 const ProfileContainer =React.lazy(() => import ('./components/Profile/ProfileContainer'));
 
 class App extends Component {
-
+catchAllUnhandledErrors = (reason, promise)=>{
+  alert("Some error occured");
+  console.error(PromiseRejectionEvent);
+}
   componentDidMount() {
     this.props.initializeApp();
+    window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors);
   }
-
+componentWillUnmount(){
+  window.removeEventListener("unhandledrejection", this.catchAllUnhandledErrors);
+}
 
   render() {
     if (!this.props.initialized) {

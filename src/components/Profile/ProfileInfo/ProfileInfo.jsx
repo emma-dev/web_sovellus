@@ -36,13 +36,15 @@ const onSubmit =(formData) => {
             <div className={classes.descriptionBlock}>
                 {/* profile.photos.large ||   */}
                 <img src={userPhoto} />
-                {isOwner && <input type={'file'} onChange={onMainPhotoSelected} />}
-                {editMode 
-                ? <ProfileDataForm initialValues={profile} profile={profile} onSubmit={onSubmit}/> 
-                : <ProfileData goToEditMode={() => {setEditMode(true)}} profile={profile} isOwner={isOwner}/>}
-                    <ProfileData profile={profile} />
-
+                
                 <div className={classes.text}><ProfileStatusWithHooks status={status} updateStatus={updateStatus} /></div>
+                <div className={classes.chooseFoto}> {isOwner && <input type={'file'} onChange={onMainPhotoSelected} />}</div>
+                {editMode 
+                ? <ProfileDataForm initialValues={profile} profile={profile} onSubmit={onSubmit} /> 
+                : <ProfileData   goToEditMode={() => {setEditMode(true)}} profile={profile} isOwner={isOwner}/>}
+              
+           
+              
             </div>
         </div>
 
@@ -50,31 +52,33 @@ const onSubmit =(formData) => {
 }
 
 const ProfileData =({profile, isOwner, goToEditMode}) => {
-return <div>
-   {isOwner &&  <div><button onClick={goToEditMode}>edit</button></div>}
-                    <div>
-                        Full name: {profile.fullName}
-                    </div>
+return <div className={classes.info}>
 
-                    <div>
-                        Looking for a job: {profile.lookingForAJob ? "yes" : "no"}
-                    </div>
-                    {profile.lookingForAJob &&
-                        <div>
-                            My professional skills: {profile.lookingForAJobDescription}
-                        </div>
-                    }
-                    <div>
-                        About me: {profile.aboutMe}
-                    </div>
+<div className={classes.string}>
+    <div className={classes.data}>Full Name</div> {profile.fullName}
+    </div>
 
-                    <div>
-                    {/* {Object.keys(profile.contacts).map(key => {
-                               return <Contact  key={key} contactTitle={key} contactValue={profile.contacts[key]} />
-                            })}  */}
-                    </div>
+<div className={classes.string}>
+<div className={classes.data}>Looking for a job</div> {profile.lookingForAJob ? "yes" : "no"}
+</div>
 
-                </div>
+{profile.lookingForAJob &&
+<div>
+<div className={classes.data}>My professional skills</div> {profile.lookingForAJobDescription}
+</div>
+}
+
+<div className={classes.string}>
+<div className={classes.data}>About me</div> {profile.aboutMe}
+</div>
+
+{isOwner && <div className={classes.edit}><button onClick={goToEditMode}>Edit</button></div>}
+{/* <div>
+    <b>Contacts</b>: {Object.keys(profile.contacts).map(key => {
+    return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]}/>
+})}
+</div> */}
+</div>
 }
 
 

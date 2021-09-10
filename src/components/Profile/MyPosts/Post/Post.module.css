@@ -1,11 +1,42 @@
 
   .item{
-    color:rgb(0, 0, 0);
+   
+    color:rgb(250, 250, 250);
+    width: 342px;
+height:128px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.11) 0%, rgba(171, 171, 171, 0.4) 100%);
+border-radius: 32px;
   }
 
 
-  div .item img{
+  div  .item img{
     width: 70px;
+    padding-top: 30px;
+    padding-left: 30px;
     
   }
+
+  .block{
+height: 130px;
+    padding-top: 60px;
+    margin-left: 425px;
+   
+  }
+
+.like{
+  width: 14px;
+height: 12px;
+  background-image: url('../../../../assets/images/Vector.png');
+  margin-top: -120px;
+ margin-left: 260px;
+}
+.number{
+ 
+  margin-left: 19px;
+}
+.message{
+ 
+  margin-left: 120px;
+  margin-top: -50px;
+}
 

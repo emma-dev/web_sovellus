@@ -5,7 +5,7 @@ import { Field, reduxForm } from 'redux-form';
 import { maxLengthCreator, required } from '../../../utils/validators/validators';
 import { Textarea } from '../../common/FormsControls/FormsControls';
 import { PureComponent } from 'react';
-
+import send from '../../../assets/images/send.png';
 const maxLength10 = maxLengthCreator(10);
 
 const MyPosts = React.memo(props => {
@@ -25,14 +25,14 @@ const MyPosts = React.memo(props => {
 
     return (
         <div>
-
-            <div className={classes.postsBlock}>
-                <h2>My posts</h2>
-                <AddNewPostFormRedux onSubmit={onAddPost} />
-            </div>
-            <div className={classes.posts}>
+ <div className={classes.posts}>
                 {postsElements}
             </div>
+            <div className={classes.postsBlock}>
+                {/* <h2>My posts</h2> */}
+                <AddNewPostFormRedux onSubmit={onAddPost} />
+            </div>
+           
         </div>
 
     );
@@ -43,13 +43,15 @@ const MyPosts = React.memo(props => {
 
 const AddNewPostForm = (props) =>{
     return (
-        <form onSubmit={props.handleSubmit} >
-        <div>
-            <Field component={Textarea} placeholder={"Post Message"} name="newPostText" validate={[required, maxLength10]} />
+        <form  onSubmit={props.handleSubmit} >
+            
+        <div className={classes.textarea}>
+            <Field className={classes.inTextarea} component={Textarea} placeholder={"Type Message..."} name="newPostText" validate={[required, maxLength10]} />
         </div>
-        <div>
-            <button>Add post</button>
+        <div className={classes.btn}>
+            <button><img src={send} /></button>
         </div>
+      
     </form>
     )
 }

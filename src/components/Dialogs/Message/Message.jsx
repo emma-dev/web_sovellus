@@ -6,13 +6,13 @@ const Message = (props) => {
 
     return (
 
-        
-        <div className={classes.dialog}> 
-        <img src={userPhoto}></img>
-        
-        {props.message}</div>
-
-
+        <div className={classes.newBlock}>
+       
+       <img src={userPhoto}></img>
+        <div className={classes.messagesColor}>
+        {props.message}
+        </div>
+        </div>
     );
 
 }

@@ -8,7 +8,13 @@
         margin-top: -62px;
         height: 15px;
         width: 262px;
-        background-image: url("../../../assets/images/pagination.png");
+        /* background-image: url("../../../assets/images/pagination.png"); */
+
+
+        
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.082) 0%, rgba(167, 167, 167, 0) 100%);
+border-radius: 28px;
     }
     .pageNumber {
       
@@ -26,7 +32,7 @@
     .paginator .back{
         border: none;
         text-align: start;
-        width: 150px;
+        
         font-size: medium;
        font-weight: bold;
         background-color: rgba(0, 0, 255, 0);
@@ -35,7 +41,7 @@
     .paginator .next{
         border: none;
         text-align: end;
-    
+        
         font-size: medium;
        font-weight: bold;
         background-color: rgba(0, 0, 255, 0);

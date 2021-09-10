@@ -5,17 +5,19 @@ import userPhoto from '../../../assets/images/Viper.png';
 
 const DialogItem = (props) => {
     return (
-        <div className={classes.dialog + ' ' + classes.active}>
-            <img src={userPhoto}></img>
-            <NavLink to={"/dialogs/" + props.id}> {props.name} </NavLink>
-
-
+        <div className={classes.block}>
+           
+            <img src={userPhoto}/>
+           <div className={classes.did}>
+            <NavLink className={classes.dialogItems} to={"/dialogs/" + props.id}> {props.name} </NavLink>
+            <h4>02 Feb</h4>
+            </div>
         </div>
 
     );
 }
 
-
+// className={classes.dialog + ' ' + classes.active}
 
 
 
