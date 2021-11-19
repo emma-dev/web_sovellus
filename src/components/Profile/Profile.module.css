@@ -1,17 +1,17 @@
 
 .content{
     grid-area:c;
-    padding: 20px;
+    
     margin-top: -70px;
-    background-image: url("../../assets/images/back_img.png");
+    background-color: #17181F;
   }
   
  
   .content img
   {
     width:220px;
-    margin: auto;
-   padding:110px;
+   
+    padding:110px;
   }
 
   .item{

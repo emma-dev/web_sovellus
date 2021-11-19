@@ -25,20 +25,22 @@ margin: 5px;
 
 .descriptionBlock{
  
-  padding:50px;
+  
   width: 429px;
   height: 743px;
-  background-image: url("../../../assets/images/new_bacgr.png");
+  
   
 }
 
 .text{
+ 
   width:80px;
     margin: auto;
 }
 
 .block{
-  margin: auto;
+  
+    
   width: 500px;
 }
 
@@ -49,8 +51,8 @@ margin: 5px;
   text-align: center;
 }
 .info{
-  padding: 90px;
-  padding-top: 0px;
+  padding: 0px;
+ margin-top:20px;
   text-align: center;
 }
 
@@ -78,8 +80,10 @@ border-radius: 7px;
 }
 
 .chooseFoto input{
+
   text-align: center;
- margin-left: 165px;
+  margin-top:0px;
+  margin-left: 160px;
   padding-top:0px;
  color: rgba(240, 248, 255, 0);
  height:  30px;
@@ -98,5 +102,8 @@ line-height: 16px;
 width: 200px;
 height: 40px;
 margin-left: -40px;
+margin-top: -90px;
 color: #FFFFFF;
   }
+
+  

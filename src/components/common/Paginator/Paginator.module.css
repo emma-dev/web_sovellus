@@ -1,20 +1,22 @@
 
-
+.home{
+    
+    margin-top: -70px;
+    background-color: #17181F;
+    padding-bottom: 100px;
+    
+}
     .paginator {
        text-align: center;
-        margin: auto;
-        
         padding: 20px;
-        margin-top: -62px;
+        margin: auto;
         height: 15px;
         width: 262px;
         /* background-image: url("../../../assets/images/pagination.png"); */
-
-
+        /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.082) 0%, rgba(167, 167, 167, 0) 100%); */
+        border-radius: 28px;
         
-
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.082) 0%, rgba(167, 167, 167, 0) 100%);
-border-radius: 28px;
+        
     }
     .pageNumber {
       
